@@ -1,4 +1,5 @@
-# Toggle switch
+Toggle switch
+--------------
 
 Design an extension of the bacterial population control system
 developed by You et al that shows better performances. Indeed, the only demonstrated way to
@@ -30,9 +31,11 @@ Contains the plots generated during analysis
 Scripts:
 ---------
 Contains MATLAB scripts that are used for:
-a) differential equations to define the model
-b) cmaes for parameter optimization
-c) computing cost while optimizing parameters
+a) generate data
+b) differential equations to define the model
+c) cmaes for parameter optimization
+d) computing cost while optimizing parameters
+e) computing steady state parameters
 
 
 
