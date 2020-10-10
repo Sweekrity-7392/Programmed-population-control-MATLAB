@@ -1,5 +1,5 @@
-Toggle switch
---------------
+Programmed population control
+-----------------------------
 
 Design an extension of the bacterial population control system
 developed by You et al that shows better performances. Indeed, the only demonstrated way to
