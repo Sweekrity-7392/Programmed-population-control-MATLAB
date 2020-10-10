@@ -1,20 +1,38 @@
+# Toggle switch
 
-In this short file, I help you to navigate within the code I provided. There are two "main" files, one for the central problem (questions 1 to 5 and 8) and one for the promoter characterization sub-problem (questions 6 and 7).
-I use Boolean flags to activate or inactivate sections that are not relevant for some questions.
+Design an extension of the bacterial population control system
+developed by You et al that shows better performances. Indeed, the only demonstrated way to
+tune the cell density at steady state of the induced system is by changing the pH of the growth
+media. Firstly, this is not a very practical solution. Secondly, the dynamic range –defined here as
+the ratio of the highest to the lowest cell density that one can get at steady state– is rather limited
+this way.
+To tentatively address these limitations, we investigate whether the additional use of an inducible
+promoter to control the intracellular levels of I and/or R proteins could lead to a system with a
+larger dynamic range for cell densities. 
+We will do this in three steps. 
+Firstly, we will model and simulate the existing system, and compute its predicted dynamic range. 
+Secondly, we will propose various extensions of the existing system, and model them. 
+Thirdly, we will simulate their behaviors and compute their predicted dynamic ranges. 
 
-To answer question 2, 
-1) you will need to edit the you_ode file that models the original (or reference) system. 
-2) and you will edit the function main_dyn_range_optim that contains the code needed to plot the behaviors associated with the reference and extended models and ultimately find the circuit that has the largest dynamic range (hence the name).
-You will set analyze_original_system to 1 and analyze_modified_systems to zero to work only with the reference model. You will edit only the first part of the analyze_original_system section
+********************************************************
 
-To answer question 3, edit the second part of the analyze_original_system section
+Folders:
+--------
 
-To answer question 5, 
-1) you will need to edit the you_odeR, you_odeI and you_odeRI files that corresponds to the  3 circuits we consider 
-2) you will set analyze_modified_systems to 1 (and analyze_original_system to 0) and set use_default_params to 1 (and use_optimized_params to 0).
+Data:
+-----
+Contains the data generated randomly and during optimization using CMAES
 
-To answer question 6, go to main_prom_char, a function dedicated to the characterization of the promoter. Set select_char_circuit to 1 and infer_param_values to 0
+Plots:
+------
+Contains the plots generated during analysis
 
-To answer question 7, you ask me about the data. Set infer_param_values to 1 (and select_char_circuit to 0) in main_prom_char. 
+Scripts:
+---------
+Contains MATLAB scripts that are used for:
+a) differential equations to define the model
+b) cmaes for parameter optimization
+c) computing cost while optimizing parameters
 
-To answer question 8, you go back to the main_dyn_range_optim function and work with analyze_modified_systems and use_optimized_params set to 1 (and use_default_params to 0)
+
+
